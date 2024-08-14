@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios de Hosting</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333333;
+      background-color: #f4f4f4;
+    }
+
+    .header {
+      background-image: url('https://example.com/hosting-background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      animation: fadeIn 2s;
+    }
+
+    .header h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .header p {
+      font-size: 1.5rem;
+    }
+
+    .btn-empezar {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      color: #ffffff;
+      background-color: #007bff;
+      border-radius: 50px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-empezar:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
+
+    .features, .plans, .about, .testimonials, .contact {
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .features {
+      background-color: #ffffff;
+    }
+
+    .plans {
+      background-color: #f8f9fa;
+    }
+
+    .about {
+      background-color: #ffffff;
+    }
+
+    .testimonials {
+      background-color: #f8f9fa;
+    }
+
+    .contact {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      background-color: #007bff;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .features p, .about p, .testimonials p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .plans .plan-card {
+      margin-bottom: 2rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      background-color: #ffffff;
+      border: none;
+    }
+
+    .plans .plan-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plan-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #007bff;
+    }
+
+    .plan-price {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .plan-features li {
+      margin-bottom: 0.5rem;
+    }
+
+    .btn-contratar {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      color: #ffffff;
+      background-color: #007bff;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-contratar:hover {
+      background-color: #0056b3;
+    }
+
+    .testimonials .testimonial-card {
+      margin-bottom: 2rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      background-color: #ffffff;
+      border: none;
+      padding: 2rem;
+    }
+
+    .testimonials .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-text {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #555555;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .contact-buttons a {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      color: white;
+      background-color: #0056b3;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .contact-buttons a:hover {
+      transform: scale(1.1);
+      background-color: #003f7f;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>Servicios de Hosting</h1>
+      <p>Rendimiento, seguridad y soporte 24/7 para tu sitio web</p>
+      <a href="#features" class="btn-empezar mt-4">Empieza Ahora</a>
+    </div>
+  </div>
+
+  <div id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">Características</h2>
+      <p>Nuestros servicios de hosting están diseñados para ofrecer la mejor experiencia en velocidad, seguridad y soporte. Ideal para cualquier tipo de proyecto, desde blogs personales hasta grandes e-commerce.</p>
+    </div>
+  </div>
+
+  <div id="plans" class="plans">
+    <div class="container">
+      <h2 class="section-title">Planes</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="plan-card card">
+            <div class="card-body">
+              <h5 class="plan-title">Básico</h5>
+              <p class="plan-price">$5/mes</p>
+              <ul class="plan-features">
+                <li>1 Sitio Web</li>
+                <li>10 GB de Almacenamiento</li>
+                <li>Soporte 24/7</li>
+              </ul>
+              <a href="#" class="btn-contratar">Contratar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="plan-card card">
+            <div class="card-body">
+              <h5 class="plan-title">Profesional</h5>
+              <p class="plan-price">$15/mes</p>
+              <ul class="plan-features">
+                <li>Hasta 5 Sitios Web</li>
+                <li>50 GB de Almacenamiento</li>
+                <li>Soporte Prioritario 24/7</li>
+              </ul>
+              <a href="#" class="btn-contratar">Contratar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="plan-card card">
+            <div class="card-body">
+              <h5 class="plan-title">Empresarial</h5>
+              <p class="plan-price">$30/mes</p>
+              <ul class="plan-features">
+                <li>Sitios Web Ilimitados</li>
+                <li>Almacenamiento Ilimitado</li>
+                <li>Soporte Dedicado 24/7</li>
+              </ul>
+              <a href="#" class="btn-contratar">Contratar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Nosotros</h2>
+      <p>Con más de 10 años de experiencia en la industria, ofrecemos soluciones de hosting confiables y asequibles. Nuestro objetivo es garantizar que tu sitio web esté siempre disponible y funcionando sin problemas.</p>
+    </div>
+  </div>
+
+  <div id="testimonials" class="testimonials">
+        <div class="container">
+          <h2 class="section-title">Testimonios</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="testimonial-card card">
+                <div class="card-body">
+                  <p class="testimonial-text">"El servicio de hosting es excelente. Mi sitio web nunca ha estado fuera de línea y el soporte es rápido y eficiente."</p>
+                  <p class="testimonial-author">- Juan Pérez</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card card">
+                <div class="card-body">
+                  <p class="testimonial-text">"Desde que migré mi tienda en línea a este hosting, he notado una mejora significativa en la velocidad de carga. ¡Muy recomendado!"</p>
+                  <p class="testimonial-author">- María López</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card card">
+                <div class="card-body">
+                  <p class="testimonial-text">"El mejor hosting que he utilizado. Tienen un soporte técnico increíble que siempre está dispuesto a ayudar."</p>
+                  <p class="testimonial-author">- Carlos Gómez</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Contacto</h2>
+          <p>¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte! Contáctanos a través de los siguientes medios:</p>
+          <div class="contact-buttons">
+            <a href="tel:+1234567890">Llámanos</a>
+            <a href="mailto:soporte@hosting.com">Envíanos un Correo</a>
+          </div>
+        </div>
+      </div>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    

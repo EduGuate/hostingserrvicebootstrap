@@ -3,331 +3,316 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios de Hosting</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      color: #333333;
-      background-color: #f4f4f4;
-    }
-
-    .header {
-      background-image: url('https://example.com/hosting-background.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-      animation: fadeIn 2s;
-    }
-
-    .header h1 {
-      font-size: 4rem;
-      margin-bottom: 1rem;
-    }
-
-    .header p {
-      font-size: 1.5rem;
-    }
-
-    .btn-empezar {
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      color: #ffffff;
-      background-color: #007bff;
-      border-radius: 50px;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: background-color 0.3s, transform 0.3s;
-    }
-
-    .btn-empezar:hover {
-      background-color: #0056b3;
-      transform: translateY(-3px);
-    }
-
-    .features, .plans, .about, .testimonials, .contact {
-      padding: 4rem 0;
-      text-align: center;
-    }
-
-    .features {
-      background-color: #ffffff;
-    }
-
-    .plans {
-      background-color: #f8f9fa;
-    }
-
-    .about {
-      background-color: #ffffff;
-    }
-
-    .testimonials {
-      background-color: #f8f9fa;
-    }
-
-    .contact {
-      background-color: #007bff;
-      color: #ffffff;
-    }
-
-    .section-title {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 0.5rem;
-    }
-
-    .section-title::after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 5px;
-      background-color: #007bff;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .features p, .about p, .testimonials p {
-      font-size: 1.2rem;
-      line-height: 1.8;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .plans .plan-card {
-      margin-bottom: 2rem;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-      background-color: #ffffff;
-      border: none;
-    }
-
-    .plans .plan-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .plan-title {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #007bff;
-    }
-
-    .plan-price {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .plan-features {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 1.5rem;
-      font-size: 1rem;
-    }
-
-    .plan-features li {
-      margin-bottom: 0.5rem;
-    }
-
-    .btn-contratar {
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      color: #ffffff;
-      background-color: #007bff;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    .btn-contratar:hover {
-      background-color: #0056b3;
-    }
-
-    .testimonials .testimonial-card {
-      margin-bottom: 2rem;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-      background-color: #ffffff;
-      border: none;
-      padding: 2rem;
-    }
-
-    .testimonials .testimonial-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .testimonial-text {
-      font-size: 1.2rem;
-      font-style: italic;
-      color: #555555;
-      margin-bottom: 1rem;
-    }
-
-    .testimonial-author {
-      font-weight: bold;
-      color: #007bff;
-    }
-
-    .contact-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .contact-buttons a {
-      display: inline-block;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      color: white;
-      background-color: #0056b3;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: transform 0.3s, background-color 0.3s;
-    }
-
-    .contact-buttons a:hover {
-      transform: scale(1.1);
-      background-color: #003f7f;
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  </style>
+  <title>Órbita Hosting — Tu web, siempre en línea · Free template</title>
+  <meta name="description" content="Plantilla gratuita en Bootstrap 5 para servicios de hosting: planes, centros de datos, uptime en vivo y contacto. Licencia MIT.">
+  <meta name="theme-color" content="#07071a">
+  <meta property="og:title" content="Órbita Hosting — Free hosting template">
+  <meta property="og:description" content="Plantilla gratuita en Bootstrap 5 para servicios de hosting.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="header">
+<body id="top">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <div class="free-bar">
     <div class="container">
-      <h1>Servicios de Hosting</h1>
-      <p>Rendimiento, seguridad y soporte 24/7 para tu sitio web</p>
-      <a href="#features" class="btn-empezar mt-4">Empieza Ahora</a>
+      <span><b>FREE TEMPLATE</b> Plantilla de hosting 100% gratis <span class="license">· Licencia MIT</span></span>
+      <a href="https://github.com/EduGuate/hostingserrvicebootstrap" target="_blank" rel="noopener noreferrer">Ver en GitHub ↗</a>
     </div>
   </div>
 
-  <div id="features" class="features">
-    <div class="container">
-      <h2 class="section-title">Características</h2>
-      <p>Nuestros servicios de hosting están diseñados para ofrecer la mejor experiencia en velocidad, seguridad y soporte. Ideal para cualquier tipo de proyecto, desde blogs personales hasta grandes e-commerce.</p>
-    </div>
-  </div>
+  <header class="site-nav">
+    <nav class="container nav-inner" aria-label="Principal">
+      <a class="brand" href="#top" aria-label="Órbita Hosting, inicio">
+        <img src="favicon.svg" alt="" width="34" height="34"> órbita<span>.host</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú"><span></span><span></span></button>
+      <div id="nav-links" class="nav-links">
+        <a href="#features">Características</a>
+        <a href="#plans">Planes</a>
+        <a href="#network">Red global</a>
+        <a href="#testimonials">Clientes</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn-glow btn-sm-glow" href="#plans">Empieza ahora</a>
+      </div>
+    </nav>
+  </header>
 
-  <div id="plans" class="plans">
-    <div class="container">
-      <h2 class="section-title">Planes</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="plan-card card">
-            <div class="card-body">
-              <h5 class="plan-title">Básico</h5>
-              <p class="plan-price">$5/mes</p>
-              <ul class="plan-features">
-                <li>1 Sitio Web</li>
-                <li>10 GB de Almacenamiento</li>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="grid-floor" aria-hidden="true"></div>
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 hero-copy">
+            <p class="status-pill"><span class="dot"></span> Todos los sistemas operativos · 99.99% uptime</p>
+            <h1>Tu web,<br><span class="grad-text">siempre en órbita.</span></h1>
+            <p class="lead-text">Hosting NVMe ultrarrápido, SSL gratis y soporte humano 24/7. Desde un blog personal hasta tu e-commerce más ambicioso — despega en menos de 60 segundos.</p>
+            <div class="hero-cta">
+              <a class="btn-glow" href="#plans">Ver planes <span aria-hidden="true">→</span></a>
+              <a class="btn-ghost" href="#features">Cómo funciona</a>
+            </div>
+            <dl class="hero-stats">
+              <div><dt><span data-count="12">0</span>k+</dt><dd>sitios alojados</dd></div>
+              <div><dt>&lt;<span data-count="40">0</span>ms</dt><dd>respuesta media</dd></div>
+              <div><dt><span data-count="24">0</span>/7</dt><dd>soporte real</dd></div>
+            </dl>
+          </div>
+          <div class="col-lg-6">
+            <div class="orbit-stage tilt" aria-hidden="true">
+              <div class="planet"></div>
+              <div class="ring r1"><span class="sat">⚡</span></div>
+              <div class="ring r2"><span class="sat">🔒</span></div>
+              <div class="ring r3"><span class="sat">🌐</span></div>
+              <div class="terminal glass">
+                <div class="term-bar"><i></i><i></i><i></i><span>deploy — órbita</span></div>
+                <pre id="term"><code></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-label="Tecnologías compatibles">
+      <div class="marquee-track">
+        <span>WordPress</span><span>Laravel</span><span>Node.js</span><span>PHP 8.3</span><span>Python</span><span>MySQL</span><span>PostgreSQL</span><span>Next.js</span><span>Git Deploy</span><span>Cloudflare</span>
+        <span aria-hidden="true">WordPress</span><span aria-hidden="true">Laravel</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">PHP 8.3</span><span aria-hidden="true">Python</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Next.js</span><span aria-hidden="true">Git Deploy</span><span aria-hidden="true">Cloudflare</span>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// CARACTERÍSTICAS</p>
+          <h2>Rendimiento, seguridad y soporte. <span class="grad-text">Sin letra pequeña.</span></h2>
+          <p>Diseñado para la mejor experiencia en velocidad, seguridad y soporte — ideal para cualquier proyecto.</p>
+        </div>
+        <div class="bento">
+          <article class="card-fx big reveal tilt">
+            <div class="icon-chip">⚡</div>
+            <h3>Discos NVMe + caché LiteSpeed</h3>
+            <p>Hasta 20× más rápido que un SSD tradicional. Tu sitio carga antes de que tus visitantes parpadeen.</p>
+            <div class="speed-bars" aria-hidden="true">
+              <div><span>Órbita</span><i style="--w:96%"></i><b>0.4s</b></div>
+              <div><span>Hosting común</span><i style="--w:38%"></i><b>2.1s</b></div>
+            </div>
+          </article>
+          <article class="card-fx reveal tilt">
+            <div class="icon-chip">🔒</div>
+            <h3>SSL gratis y firewall</h3>
+            <p>Certificados automáticos, protección DDoS y escaneo de malware diario.</p>
+          </article>
+          <article class="card-fx reveal tilt">
+            <div class="icon-chip">💾</div>
+            <h3>Backups diarios</h3>
+            <p>30 días de copias automáticas. Restaura con un clic.</p>
+          </article>
+          <article class="card-fx reveal tilt">
+            <div class="icon-chip">🧑‍🚀</div>
+            <h3>Soporte humano 24/7</h3>
+            <p>Personas reales por chat, correo y teléfono. Respuesta media: 3 minutos.</p>
+          </article>
+          <article class="card-fx reveal tilt">
+            <div class="icon-chip">🚀</div>
+            <h3>Migración gratuita</h3>
+            <p>Movemos tu sitio desde tu proveedor actual sin tiempo de inactividad. Tú no tocas nada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANS -->
+    <section id="plans" class="section plans">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// PLANES</p>
+          <h2>Elige tu <span class="grad-text">trayectoria.</span></h2>
+          <div class="billing-toggle" role="group" aria-label="Periodo de facturación">
+            <button class="active" data-billing="monthly" aria-pressed="true">Mensual</button>
+            <button data-billing="yearly" aria-pressed="false">Anual <em>-20%</em></button>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="plan tilt">
+              <h3>Básico</h3>
+              <p class="plan-desc">Para tu primer sitio o blog personal.</p>
+              <p class="price"><span class="cur">$</span><span class="amount" data-monthly="5" data-yearly="4">5</span><span class="per">/mes</span></p>
+              <ul>
+                <li>1 sitio web</li>
+                <li>10 GB NVMe</li>
+                <li>SSL gratis</li>
                 <li>Soporte 24/7</li>
               </ul>
-              <a href="#" class="btn-contratar">Contratar</a>
-            </div>
+              <a class="btn-ghost w-100" href="#contact">Contratar</a>
+            </article>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="plan-card card">
-            <div class="card-body">
-              <h5 class="plan-title">Profesional</h5>
-              <p class="plan-price">$15/mes</p>
-              <ul class="plan-features">
-                <li>Hasta 5 Sitios Web</li>
-                <li>50 GB de Almacenamiento</li>
-                <li>Soporte Prioritario 24/7</li>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="plan featured tilt">
+              <span class="ribbon">Más popular</span>
+              <h3>Profesional</h3>
+              <p class="plan-desc">Para negocios y tiendas en crecimiento.</p>
+              <p class="price"><span class="cur">$</span><span class="amount" data-monthly="15" data-yearly="12">15</span><span class="per">/mes</span></p>
+              <ul>
+                <li>Hasta 5 sitios web</li>
+                <li>50 GB NVMe</li>
+                <li>Dominio gratis el 1er año</li>
+                <li>Soporte prioritario 24/7</li>
               </ul>
-              <a href="#" class="btn-contratar">Contratar</a>
-            </div>
+              <a class="btn-glow w-100" href="#contact">Contratar</a>
+            </article>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="plan-card card">
-            <div class="card-body">
-              <h5 class="plan-title">Empresarial</h5>
-              <p class="plan-price">$30/mes</p>
-              <ul class="plan-features">
-                <li>Sitios Web Ilimitados</li>
-                <li>Almacenamiento Ilimitado</li>
-                <li>Soporte Dedicado 24/7</li>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="plan tilt">
+              <h3>Empresarial</h3>
+              <p class="plan-desc">Recursos dedicados para alto tráfico.</p>
+              <p class="price"><span class="cur">$</span><span class="amount" data-monthly="30" data-yearly="24">30</span><span class="per">/mes</span></p>
+              <ul>
+                <li>Sitios web ilimitados</li>
+                <li>Almacenamiento ilimitado</li>
+                <li>IP dedicada + CDN</li>
+                <li>Gestor de cuenta dedicado</li>
               </ul>
-              <a href="#" class="btn-contratar">Contratar</a>
-            </div>
+              <a class="btn-ghost w-100" href="#contact">Contratar</a>
+            </article>
           </div>
         </div>
+        <p class="demo-note">Precios de demostración en USD · Garantía de reembolso de 30 días</p>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">Sobre Nosotros</h2>
-      <p>Con más de 10 años de experiencia en la industria, ofrecemos soluciones de hosting confiables y asequibles. Nuestro objetivo es garantizar que tu sitio web esté siempre disponible y funcionando sin problemas.</p>
-    </div>
-  </div>
+    <!-- NETWORK -->
+    <section id="network" class="section">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-5 reveal">
+            <p class="eyebrow">// SOBRE NOSOTROS</p>
+            <h2>10 años manteniendo <span class="grad-text">internet despierto.</span></h2>
+            <p class="muted">Ofrecemos soluciones de hosting confiables y asequibles. Nuestro objetivo es simple: que tu sitio esté siempre disponible y funcionando sin problemas, estés donde estés.</p>
+            <div class="uptime glass">
+              <div class="uptime-head"><span>Uptime · últimos 30 días</span><b>99.99%</b></div>
+              <div class="uptime-bars" id="uptime-bars" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <div class="world glass" aria-label="Mapa de centros de datos">
+              <svg viewBox="0 0 600 320" role="img" aria-label="Seis centros de datos conectados en América, Europa y Asia">
+                <defs>
+                  <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="currentColor"/></pattern>
+                  <linearGradient id="arc" x1="0" x2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+                </defs>
+                <g class="land" fill="url(#dots)">
+                  <path d="M60 60q60-30 130-10l20 40-30 30-20 40-40 10-30-40-40-20z"/>
+                  <path d="M170 180l40 10 20 40-10 60-30 10-20-60z"/>
+                  <path d="M280 50l70-10 30 30-20 40-50 10-30-30z"/>
+                  <path d="M290 140l60 0 20 60-30 60-30-20-20-60z"/>
+                  <path d="M380 50l130 0 50 50-30 60-60 10-40-30-50-20z"/>
+                  <path d="M480 220l60 0 20 30-40 20-40-20z"/>
+                </g>
+                <g class="arcs" fill="none" stroke="url(#arc)" stroke-width="1.6">
+                  <path d="M150 110Q230 20 320 80"/><path d="M320 80Q420 20 470 110"/><path d="M150 110Q170 180 205 230"/><path d="M470 110Q520 170 515 240"/><path d="M320 80Q330 150 320 190"/>
+                </g>
+                <g class="nodes">
+                  <circle cx="150" cy="110" r="5"/><circle cx="205" cy="230" r="5"/><circle cx="320" cy="80" r="5"/><circle cx="320" cy="190" r="5"/><circle cx="470" cy="110" r="5"/><circle cx="515" cy="240" r="5"/>
+                </g>
+              </svg>
+              <div class="world-legend"><span><i></i> 6 centros de datos</span><span>Tier III · energía 100% renovable</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div id="testimonials" class="testimonials">
-        <div class="container">
-          <h2 class="section-title">Testimonios</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="testimonial-card card">
-                <div class="card-body">
-                  <p class="testimonial-text">"El servicio de hosting es excelente. Mi sitio web nunca ha estado fuera de línea y el soporte es rápido y eficiente."</p>
-                  <p class="testimonial-author">- Juan Pérez</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="testimonial-card card">
-                <div class="card-body">
-                  <p class="testimonial-text">"Desde que migré mi tienda en línea a este hosting, he notado una mejora significativa en la velocidad de carga. ¡Muy recomendado!"</p>
-                  <p class="testimonial-author">- María López</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="testimonial-card card">
-                <div class="card-body">
-                  <p class="testimonial-text">"El mejor hosting que he utilizado. Tienen un soporte técnico increíble que siempre está dispuesto a ayudar."</p>
-                  <p class="testimonial-author">- Carlos Gómez</p>
-                </div>
-              </div>
-            </div>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// TESTIMONIOS</p>
+          <h2>Clientes que <span class="grad-text">ya despegaron.</span></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal"><figure class="quote card-fx tilt"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Mi sitio web nunca ha estado fuera de línea y el soporte es rápido y eficiente.”</blockquote><figcaption><span class="avatar">JP</span><span><b>Juan Pérez</b><small>Blog de viajes</small></span></figcaption></figure></div>
+          <div class="col-md-4 reveal"><figure class="quote card-fx tilt"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Desde que migré mi tienda en línea, la velocidad de carga mejoró muchísimo. ¡Muy recomendado!”</blockquote><figcaption><span class="avatar">ML</span><span><b>María López</b><small>E-commerce de moda</small></span></figcaption></figure></div>
+          <div class="col-md-4 reveal"><figure class="quote card-fx tilt"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“El mejor hosting que he usado. Un soporte técnico increíble, siempre dispuesto a ayudar.”</blockquote><figcaption><span class="avatar">CG</span><span><b>Carlos Gómez</b><small>Agencia digital</small></span></figcaption></figure></div>
+        </div>
+        <p class="demo-note">Testimonios de ejemplo para la plantilla.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">// PREGUNTAS FRECUENTES</p>
+          <h2>Todo <span class="grad-text">claro.</span></h2>
+        </div>
+        <div class="faq reveal">
+          <details open><summary>¿Puedo cambiar de plan más adelante?</summary><p>Sí. Sube o baja de plan cuando quieras desde tu panel; solo pagas la diferencia prorrateada.</p></details>
+          <details><summary>¿Incluye correo corporativo?</summary><p>Todos los planes incluyen cuentas de correo con tu dominio, antispam y acceso webmail.</p></details>
+          <details><summary>¿Qué pasa si no estoy satisfecho?</summary><p>Tienes 30 días de garantía de reembolso, sin preguntas.</p></details>
+          <details><summary>¿La plantilla es realmente gratis?</summary><p>Sí. Descárgala y adáptala para proyectos personales o comerciales bajo la licencia MIT. Solo conserva el aviso de licencia.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE TEMPLATE -->
+    <section id="template" class="section">
+      <div class="container">
+        <div class="opensource reveal">
+          <div>
+            <span class="free-pill">FREE &amp; OPEN SOURCE</span>
+            <h2>Un hosting de primera. <span class="grad-text">Plantilla a costo cero.</span></h2>
+            <p>¿Te gusta esta web? Es tuya. Órbita es una plantilla gratuita en Bootstrap 5 para lanzar tu empresa de hosting o servicios cloud.</p>
+            <ul>
+              <li>Responsive · HTML, CSS y JavaScript</li>
+              <li>Animaciones con soporte de movimiento reducido</li>
+              <li>Licencia MIT · uso personal y comercial</li>
+            </ul>
+          </div>
+          <div class="os-actions">
+            <a class="btn-glow" href="https://github.com/EduGuate/hostingserrvicebootstrap" target="_blank" rel="noopener noreferrer">Descargar en GitHub ↗</a>
+            <small>Sin registro. Sin tarjeta.</small>
           </div>
         </div>
       </div>
-    
-      <div id="contact" class="contact">
-        <div class="container">
-          <h2 class="section-title">Contacto</h2>
-          <p>¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte! Contáctanos a través de los siguientes medios:</p>
-          <div class="contact-buttons">
-            <a href="tel:+1234567890">Llámanos</a>
-            <a href="mailto:soporte@hosting.com">Envíanos un Correo</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="aurora small" aria-hidden="true"><i></i><i></i></div>
+          <p class="eyebrow">// CONTACTO</p>
+          <h2>¿Listo para el despegue?</h2>
+          <p>¿Tienes alguna pregunta? Nuestro equipo está aquí para ayudarte, a cualquier hora.</p>
+          <div class="hero-cta justify-content-center">
+            <a class="btn-glow" href="tel:+1234567890">Llámanos</a>
+            <a class="btn-ghost" href="mailto:soporte@hosting.com">Envíanos un correo</a>
           </div>
         </div>
       </div>
-    
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
-    </html>
-    
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top"><img src="favicon.svg" alt="" width="28" height="28"> órbita<span>.host</span></a>
+      <span>© <span id="year"></span> Órbita Hosting · Plantilla de demostración</span>
+      <span class="footer-links"><a href="#template">FREE TEMPLATE ↗</a><a href="LICENSE">Licencia MIT</a><a href="#top">Volver arriba ↑</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
